@@ -1,0 +1,86 @@
+.Nav {
+	border-bottom: 1px solid #F0F0F0;
+	margin-bottom: 29px;
+}
+.Navbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+    color: #333333;
+	padding: 32px 0;
+
+	&__Link {
+		opacity: 0.6;
+		cursor: pointer;
+		padding: 0px 14px;
+
+		&-brand {
+			opacity: 1;
+			background: url('../img/logo/Яндекс Дом@1x.png') no-repeat;
+			width: 108px;
+			height: 27px;
+			margin-right: 29px;
+		}
+
+		&-toggle {
+			display: none;
+		}
+
+		&-current {
+			opacity: 1;
+			font-weight: bold;
+		}
+	}
+	&__Items {
+		display: flex;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.Navbar__Items,
+	.Navbar {
+		border-bottom: none;
+		justify-content: space-between;
+
+
+		&__Link {
+			padding-top: 30px;
+			font-size: 100%;
+
+			&-toggle {
+				background: url('../img/icon_list_m.png') center no-repeat;
+				align-self: flex-end;
+				width: 32px;
+				height: 28px;
+				display: inline-block;
+				position: relative;
+				cursor: pointer;
+			}
+		}
+
+		&__Items {
+			display: none;
+
+			&--right {
+				margin-left: 0;
+			}
+		}
+
+		&__ToggleShow {
+
+
+			display: block;
+			max-width: 150px;
+			width: 90px;
+			position: absolute;
+			background: rgba(250, 250, 250, 0.5);
+			z-index: 1000;
+			right: 20px;
+			top: 60px;
+
+			.Navbar__Link {
+				display: inline-block;
+				padding: 5px;
+			}
+		}
+	}
+}

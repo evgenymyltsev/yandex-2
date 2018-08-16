@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Яндекс Дом</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="Nav">
+		<div class="Wrapper">
+			<div class="Navbar">
+				<a class="Navbar__Link-brand"></a>
+				<a class="Navbar__Link Navbar__Link-toggle"></a>
+				<nav class="Navbar__Items">
+					<a class="Navbar__Link Navbar__Link-current">
+						Сводка
+					</a>
+					<a class="Navbar__Link">
+						Устройства
+					</a>
+					<a class="Navbar__Link">
+						Сценарии
+					</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div class="Main">
+		<div class="Wrapper">
+			<div class="Layout">
+				<div class="MainLayout">
+					<h2 class="MainLayout__header">Главная</h2>
+					<div class="Dashboard">
+						<div class="Dashboard__info">
+							<h3 class="Dashboard__info__greet">Привет, Геннадий</h3>
+							<div class="Dashboard__info__message">Двери и окна закрыты, сигнализация включена.</div>
+							<dir class="Temperature__list">
+								<div class="Temperature__item">
+									<span class="Temperature__item-title">Дома</span>
+									<span class="Temperature__item-temp">+23</span>
+								</div>
+								<div class="Temperature__item Temperature__item--icon">
+									<span class="Temperature__item-title">За окном</span>
+									<span class="Temperature__item-temp">+40</span>
+								</div>
+							</dir>
+						</div>
+						<div class="Devices">
+							<div class="Device__item Device__item--inline">
+								<div class="Device__icon Device__icon-sun"></div>
+								<div class="Device__content">
+									<h4 class="Device__title">Xiaomi Yeelight LED Smart Bulb</h4>
+									<p class="Device__text">Включится в 17:00</p>
+								</div>
+							</div>
+							<div class="Device__item Device__item--inline">
+								<div class="Device__icon Device__icon-temp"></div>
+								<div class="Device__content">
+									<h4 class="Device__title">Philips Cooler</h4>
+									<p class="Device__text">Начнет охлаждать в 16:30</p>
+								</div>
+							</div>
+							<div class="Device__item Device__item--scroll">
+								<div class="Device__scroll"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="WorkScript">
+					<div class="WorkScript__header">
+						<h2 class="WorkScript__title">Избранные сценарии</h2>
+						<div class="WorkScript__controls">
+							<span class="WorkScript__controls-left"></span>
+							<span class="WorkScript__controls-right"></span>
+						</div>
+					</div>
+					<div class="WorkScript__list">
+						<div class="WorkScript__item">
+							<div class="WorkScript__icon"></div>
+							<div class="WorkScript__content">
+								<h4 class="WorkScript__header">header</h4>
+								<p class="WorkScript__text">text</p>
+							</div>
+						</div>
+						<div class="WorkScript__item">
+							<div class="WorkScript__icon"></div>
+							<div class="WorkScript__content">
+								<h4 class="WorkScript__header">header</h4>
+								<p class="WorkScript__text">text</p>
+							</div>
+						</div>
+						<div class="WorkScript__item">
+							<div class="WorkScript__icon"></div>
+							<div class="WorkScript__content">
+								<h4 class="WorkScript__header">header</h4>
+								<p class="WorkScript__text">text</p>
+							</div>
+						</div>
+						<div class="WorkScript__item">
+							<div class="WorkScript__icon"></div>
+							<div class="WorkScript__content">
+								<h4 class="WorkScript__header">header</h4>
+								<p class="WorkScript__text">text</p>
+							</div>
+						</div>
+						<div class="WorkScript__item">
+							<div class="WorkScript__icon"></div>
+							<div class="WorkScript__content">
+								<h4 class="WorkScript__header">header</h4>
+								<p class="WorkScript__text">text</p>
+							</div>
+						</div>
+						<div class="WorkScript__item">
+							<div class="WorkScript__icon"></div>
+							<div class="WorkScript__content">
+								<h4 class="WorkScript__header">header</h4>
+							</div>
+						</div>
+						<div class="WorkScript__item">
+							<div class="WorkScript__icon"></div>
+							<div class="WorkScript__content">
+								<h4 class="WorkScript__header">header</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="FavDevs">
+		<div class="Wrapper">
+			<div class="FavDevices">
+				<h3 class="FavDevices__header">Избранные устройства</h3>
+				<div class="FavDevices__filter">
+					<button class="FavDevices__button FavDevices__button-current">Все</button>
+					<button class="FavDevices__button">Кухня</button>
+					<button class="FavDevices__button">Зал</button>
+					<button class="FavDevices__button">Лампочки</button>
+					<button class="FavDevices__button">Камера</button>
+				</div>
+			</div>
+
+			<div class="Devices Devices--row">
+				<div class="Device__item Device__item--inline">
+					<div class="Device__icon Device__icon-sun"></div>
+					<div class="Device__content">
+						<h4 class="Device__title">Xiaomi Yeelight LED Smart Bulb</h4>
+						<p class="Device__text">Включится в 17:00</p>
+					</div>
+				</div>
+				<div class="Device__item Device__item--inline">
+					<div class="Device__icon Device__icon-temp"></div>
+					<div class="Device__content">
+						<h4 class="Device__title">Philips Cooler</h4>
+						<p class="Device__text">Начнет охлаждать в 16:30</p>
+					</div>
+				</div>
+				<div class="Device__item Device__item--inline">
+					<div class="Device__icon Device__icon-time"></div>
+					<div class="Device__content">
+						<h4 class="Device__title">Xiaomi Yeelight LED Smart Bulb</h4>
+						<p class="Device__text">Включится в 17:00</p>
+					</div>
+				</div>
+				<div class="Device__item Device__item--inline">
+					<div class="Device__icon Device__icon-temp"></div>
+					<div class="Device__content">
+						<h4 class="Device__title">Philips Cooler</h4>
+						<p class="Device__text">Начнет охлаждать в 16:30</p>
+					</div>
+				</div>
+				<div class="Device__item Device__item--inline">
+					<div class="Device__icon Device__icon-sun"></div>
+					<div class="Device__content">
+						<h4 class="Device__title">Xiaomi Yeelight LED Smart Bulb</h4>
+						<p class="Device__text">Включится в 17:00</p>
+					</div>
+				</div>
+				<div class="Device__item Device__item--inline">
+					<div class="Device__icon Device__icon-time"></div>
+					<div class="Device__content">
+						<h4 class="Device__title">Philips Cooler</h4>
+						<p class="Device__text">Начнет охлаждать в 16:30</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="Footer">
+		<div class="Wrapper">
+			<div class="Footer__wrapper">
+				<div class="Footer__links">
+					<a href="#">Помощь</a>
+					<a href="#">Обратная связь</a>
+					<a href="#">Разработчикам</a>
+					<a href="#">Условия использования</a>
+				</div>
+				<div class="Footer__copy">
+					&copy;2001-2017 ООО "Яндекс"
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="Modal1" class="Modal">
+		<div class="ModalWrapper">
+			<div class="Modal__content">
+				<div class="Modal__content__header">
+					<div class="Modal__content__header-info">
+						<h4 class="Modal__content__header-info header">Xiaomi Yeelight LED Smart Bulb</h4>
+						<p class="Modal__content__header-info subtext">Включится в 17:00</p>
+					</div>
+					<div class="Modal__content__header-icon Modal__content__header-icon-sun"></div>
+				</div>
+				<div class="Modal__content__filter">
+					<button class="Modal__content__button Modal__content__button-current">Вручную</button>
+					<button class="Modal__content__button">Дневной свет</button>
+					<button class="Modal__content__button">Вечерний свет</button>
+					<button class="Modal__content__button">Рассвет</button>
+				</div>
+				<div class="Modal__content__range">
+					<input type="range" data-type="light" min="0" max="100" value="0" class="Modal__content__rang input-light"/>
+				</div>
+			</div>
+			<div class="Modal__actions">
+				<button class="Modal__actions__button Modal__actions__button-current">Применить</button>
+				<button class="Modal__actions__button">Закрыть</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="Modal2" class="Modal">
+		<div class="ModalWrapper">
+			<div class="Modal__content">
+				<div class="Modal__content__header">
+					<div class="Modal__content__header-info">
+						<h4 class="Modal__content__header-info header">Elgato Eve Degree Connected</h4>
+						<p class="Modal__content__header-info subtext">Включено</p>
+					</div>
+					<div class="Modal__content__header-icon Modal__content__header-icon-temp">+23</div>
+				</div>
+				<div class="Modal__content__filter">
+					<button class="Modal__content__button Modal__content__button-current">Вручную</button>
+					<button class="Modal__content__button">Холодно</button>
+					<button class="Modal__content__button">Тепло</button>
+					<button class="Modal__content__button">Жарко</button>
+				</div>
+				<div class="Modal__content__range">
+					<input type="range" data-type="temp" min="0" max="100" value="0" class="Modal__content__rang input-temp"/>
+					<div class="temp">
+						<span class="temp__min">-10</span>
+						<span class="temp__max">+30</span>
+					</div>
+				</div>
+			</div>
+			<div class="Modal__actions">
+				<button class="Modal__actions__button Modal__actions__button-current">Применить</button>
+				<button class="Modal__actions__button">Закрыть</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="Modal3" class="Modal">
+		<div class="ModalWrapper">
+			<div class="Modal__content">
+				<div class="Modal__content__header">
+					<div class="Modal__content__header-info">
+						<h4 class="Modal__content__header-info header">Xiaomi Warm Floor</h4>
+						<p class="Modal__content__header-info subtext">Включено</p>
+					</div>
+					<div class="Modal__content__header-icon Modal__content__header-icon-temp">+23</div>
+				</div>
+				<div class="Modal__content__circle">
+					<div class="Modal__content__circle__triangle"></div>
+					<div class="Modal__content__circle-inner">
+						<p class="Modal__content__circle-inner__content">
+							+23
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="Modal__actions">
+				<button class="Modal__actions__button Modal__actions__button-current">Применить</button>
+				<button class="Modal__actions__button">Закрыть</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+
+</html>

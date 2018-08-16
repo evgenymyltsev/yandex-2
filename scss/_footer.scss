@@ -1,0 +1,41 @@
+.Footer {
+    font-size: 12px;
+    color: #858585;
+    padding-bottom: 30px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        @media only screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    &__links,
+    &__copy {
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 100;
+        letter-spacing: 0.01px;
+        display: inline;
+    }
+
+    &__links {
+        margin-bottom: 20px;
+
+
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        color: #858585;
+        text-decoration: none;
+        padding-right: 20px;
+    }
+}
+

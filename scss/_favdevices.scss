@@ -1,0 +1,85 @@
+.FavDevs {
+
+    @media only screen and (min-width: 768px) {
+        .Wrapper {
+            overflow: visible;
+        }
+    }
+}
+
+.FavDevices {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+
+    &__header {
+        display: inline-block;
+        padding: 5px 20px 0 0;
+    }
+
+    &__filter {
+        display: inline-block
+    }
+
+    &__button {
+        background: #F7F7F7;
+        font-size: 13px;
+        color: #000000;
+        font-weight: 700;
+        border-radius: 20px;
+        height: 30px;
+        padding: 0 10px;
+        display: none;
+
+        &-current {
+            display: inline-block;
+            background: #FFD93E;
+        }
+
+        @media only screen and (min-width: 768px) {
+            display: inline-block;
+        }
+    }
+
+    &__list {
+        display: flex;
+        overflow: hidden;
+        text-align: left;
+        padding: 20px 20px 0 0;
+    }
+
+    &__item {
+        background: #F7F7F7;
+        min-width: 200px;
+        height: 100px;
+        border-radius: 20px;
+        margin: 0 15px 15px 0;
+        padding: 14px 0 14px 14px;
+        display: flex;
+        flex-wrap: wrap;
+
+        &:hover {
+            background: #FFFFFF;
+            box-shadow: 0 2px 6px 0 rgba(197,186,186,0.50);
+            cursor: pointer;
+        }
+    }
+
+    &__icon {
+        background: url('../img/icon_sun_2@1x.png') no-repeat;
+        width: 100%;
+        height: 26px;
+        align-self: flex-start;
+    }
+
+    &__content {
+        align-self: flex-end;
+
+    }
+
+    &__text {
+        font-size: 12px;
+        text-align: left;
+        color: #858585
+    }
+}
