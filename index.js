@@ -1,6 +1,5 @@
 function classToggle() {
     const navs = document.querySelectorAll('.Navbar__Items')
-    
     navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
   }
   document.querySelector('.Navbar__Link-toggle')
@@ -9,7 +8,6 @@ function classToggle() {
 const modal1 = document.getElementById('Modal1');
 const modal2 = document.getElementById('Modal2');
 const modal3 = document.getElementById('Modal3');
-
 
 const devicesArrayTemp = document.querySelectorAll(".Device__icon-temp");
 
@@ -42,10 +40,8 @@ buttons.forEach(button =>
         modal1.style.display = "none";
         modal2.style.display = "none";
         modal3.style.display = "none";
-
     }
 )
-
 
 window.onclick = function(event) {
     if (event.target == modal1) {
