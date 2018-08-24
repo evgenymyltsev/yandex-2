@@ -431,7 +431,12 @@ h2 {
   position: relative; }
 
 .Modal {
-  display: none;
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transform-origin: 0 100%;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -631,5 +636,8 @@ h2 {
         background: #FFCD00; }
       .Modal__actions__button:first-child {
         margin: 0 16px 0 0; }
+  .Modal--open {
+    opacity: 1;
+    transform: scale(1); }
 
 /*---------------------------------------------------- */

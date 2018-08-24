@@ -19,27 +19,33 @@ const buttons = document.querySelectorAll(".Modal__actions__button");
 
 devicesArrayTemp.forEach((dev, i) =>
 	dev.parentNode.onclick = function() {
-		modal1.style.display = "block";
+         // modal1.style.display = "block";
+         modal1.classList.add('Modal--open');
 	}
 )
 
 devicesArraySun.forEach((dev, i) =>
 	dev.parentNode.onclick = function() {
-		modal2.style.display = "block";
+         // modal2.style.display = "block";
+         modal2.classList.add('Modal--open');
 	}
 )
 
 devicesArrayTime.forEach((dev, i) =>
 	dev.parentNode.onclick = function() {
-		modal3.style.display = "block";
+         // modal3.style.display = "block";
+         modal3.classList.add('Modal--open');
 	}
 )
 
 buttons.forEach(button =>
     button.onclick = function() {
-        modal1.style.display = "none";
-        modal2.style.display = "none";
-        modal3.style.display = "none";
+        // modal1.style.display = "none";
+        modal1.classList.remove('Modal--open');
+        // modal2.style.display = "none";
+        modal2.classList.remove('Modal--open');
+        // modal3.style.display = "none";
+        modal3.classList.remove('Modal--open');
     }
 )
 
